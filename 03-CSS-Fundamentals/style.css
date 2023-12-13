@@ -1,11 +1,18 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* * {
+	border-top: 10px solid #1098ad;
+} */
+
+body {
+	color: #444;
 	font-family: sans-serif;
 }
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
 h1 {
 	font-size: 26px;
 	text-transform: uppercase;
@@ -56,3 +63,77 @@ li {
 .related {
 	list-style: none;
 }
+
+.main-header {
+	background-color: #f7f7f7;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+	font-weight: bold;
+} */
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+/* li:nth-child(2) {
+	color: red;
+} */
+
+/* li:nth-child(odd) {
+	color: blue;
+} */
+
+/* This won't work */
+/* article p:first-child {
+	color: blue;
+} */
+
+/* Stylin links */
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	/* color: #777; */
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline orangered;
+}
+
+a:active {
+	background-color: black;
+	font-style: italic;
+}
+
+/* Resolving conflicts */
+/* #copyright {
+	color: red;
+}
+
+.copyright {
+	color: blue;
+}
+
+.text {
+	color: yellow;
+}
+
+footer p {
+	color: green;
+} */
